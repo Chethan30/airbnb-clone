@@ -1,0 +1,29 @@
+.bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white !important;
+}
+
+.Mui-selected {
+  color: var(--airbnb-primary) !important;
+}
+
+.bottom-nav > .MuiBox-root {
+  width: 100%;
+  background-color: white !important;
+}
+
+.MuiBottomNavigation-root {
+  background-color: white !important;
+  z-index: 100 !important;
+}
+
+@media screen and (max-width: 742px) {
+  .bottom-nav {
+    display: block;
+  }
+}

@@ -1,0 +1,76 @@
+.filter {
+  display: flex;
+  gap: 3rem;
+  padding: 0.5rem 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  white-space: nowrap;
+
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+
+  /* scrollbar-color: none; */
+  /* border: 1px solid red; */
+}
+
+/* ::-webkit-scrollbar {
+  opacity: 0.5;
+  background: transparent;
+} */
+
+/* ::-webkit-scrollbar:hover {
+  opacity: 1;
+} */
+
+::-webkit-scrollbar {
+  background-color: white;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--airbnb-grey);
+  border-radius: 10px;
+}
+
+.filter-image-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.filter-image-holder:hover,
+.selected {
+  opacity: 1;
+  border-bottom: 2px solid var(--airbnb-grey);
+}
+
+.selected {
+  border-bottom: 2px solid black;
+}
+
+.selected > p {
+  font-weight: 900;
+}
+
+.filter-image-holder > img {
+  height: 20px;
+  /* opacity: 0.2; */
+}
+
+.filter-image-holder > p {
+  font-size: smaller;
+  margin: 0.3rem 0 0 0;
+  font-weight: 700;
+  /* color: var(--airbnb-grey); */
+}
+
+@media screen and (max-width: 742px) {
+  .filter {
+    border-bottom: 1px solid var(--airbnb-grey);
+  }
+}

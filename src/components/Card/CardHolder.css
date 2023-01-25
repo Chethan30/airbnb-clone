@@ -1,0 +1,9 @@
+.card-holer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  margin-top: 5rem;
+  gap: 2rem;
+}

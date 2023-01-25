@@ -1,0 +1,46 @@
+.mobile-search {
+  display: none;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 3rem;
+  box-shadow: 0px 1px 10px 1px var(--airbnb-grey);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 10px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: 1px solid rgba(128, 128, 128, 0.486);
+  padding: 10px;
+  border-radius: 5rem;
+}
+
+.down {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.middle {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+
+  margin-right: 16rem;
+}
+
+@media screen and (max-width: 742px) {
+  .mobile-search {
+    display: flex;
+  }
+}

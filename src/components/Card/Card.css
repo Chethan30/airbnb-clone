@@ -1,0 +1,73 @@
+.card-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.card-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.card-rating > p {
+  margin: 0;
+}
+
+.hotel-name {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.cost {
+  font-weight: 600;
+}
+
+.feature {
+  color: grey;
+}
+
+.cost-number {
+  font-weight: 800;
+}
+
+.swiper-container {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+
+.swiper-container .swiper-slide {
+  margin: 0;
+}
+
+.swiper-container .swiper-button-next::after,
+.swiper-container .swiper-button-prev::after {
+  color: black;
+  scale: 0.3;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 30px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 1px 1px black;
+}
+
+.swiper-container .swiper-button-next:hover::after,
+.swiper-container .swiper-button-prev:hover::after {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 1);
+
+  transition: ease-in-out all 200ms;
+}
